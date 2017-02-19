@@ -1,5 +1,4 @@
 ---
-# force
 sudo: required
 language: bash
 services:
