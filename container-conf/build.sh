@@ -1,5 +1,6 @@
 #!/bin/bash
 build_fedora_base_image
+build_travis_trigger_next=( radiasoft%2Fcontainer-test )
 
 build_as_run_user() {
     if [[ $build_is_vagrant ]]; then
@@ -22,4 +23,5 @@ build_as_run_user() {
     pip install --upgrade setuptools tox
     pyenv virtualenv py2
     pyenv global py2
+    pip install pykern
 }
