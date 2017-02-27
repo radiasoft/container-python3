@@ -20,7 +20,7 @@ build_as_run_user() {
     . ~/.bashrc
     rm requirements.txt
     pip install --upgrade pip
-    pip install --upgrade setuptools tox
+    pip install --upgrade setuptools==32.1.3 tox
     pyenv virtualenv py2
     pyenv global py2
     pip install pykern
