@@ -5,6 +5,7 @@ bind-utils
 gcc
 gcc-c++
 gd-devel
+gdb
 ghostscript
 git
 gsl-devel
