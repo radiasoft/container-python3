@@ -12,6 +12,7 @@ gsl-devel
 hostname
 iproute
 libpng-devel
+libtool
 llvm-libs
 lzma-devel
 make
