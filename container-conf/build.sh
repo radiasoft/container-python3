@@ -11,17 +11,16 @@ build_as_run_user() {
         build_sudo systemctl enable docker.service
     fi
     cd
-    # Need to have requirements.txt for bivio_pyenv_2 to work
-    touch requirements.txt
     # This line stops a warning from the pyenv installer
     bivio_path_insert ~/.pyenv/bin 1
     . ~/.bashrc
-    bivio_pyenv_2
+    local v=2.7.12
+    bivio_pyenv_global "$v"
     . ~/.bashrc
     rm requirements.txt
     pip install --upgrade pip
     pip install --upgrade setuptools==32.1.3 tox
-    pyenv virtualenv py2
-    pyenv global py2
-    pip install pykern
+    local e=py2
+    pyenv virtualenv "$v" "$e"
+    pyenv global "$e"
 }
