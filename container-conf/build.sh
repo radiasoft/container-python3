@@ -17,7 +17,6 @@ build_as_run_user() {
     local v=2.7.12
     bivio_pyenv_global "$v"
     . ~/.bashrc
-    rm requirements.txt
     pip install --upgrade pip
     pip install --upgrade setuptools==32.1.3 tox
     local e=py2
