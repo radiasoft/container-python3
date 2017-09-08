@@ -11,15 +11,5 @@ build_as_run_user() {
         build_sudo systemctl enable docker.service
     fi
     cd
-    # This line stops a warning from the pyenv installer
-    bivio_path_insert ~/.pyenv/bin 1
-    . ~/.bashrc
-    local v=2.7.12
-    bivio_pyenv_global "$v"
-    . ~/.bashrc
-    pip install --upgrade pip
-    pip install --upgrade setuptools==32.1.3 tox
-    local e=py2
-    pyenv virtualenv "$v" "$e"
-    pyenv global "$e"
+    bivio_pyenv_2
 }
