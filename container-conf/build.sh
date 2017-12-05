@@ -1,5 +1,5 @@
 #!/bin/bash
-build_fedora_base_image 25
+build_fedora_base_image
 build_travis_trigger_next=( beamsim-part1 )
 build_is_public=1
 
