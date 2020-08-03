@@ -1,3 +1,3 @@
-### Python2 Container (radiasoft/python2)
+### Python3 Container (radiasoft/python3) 
 
-Python 2.7 is installed in the radiasoft/python2 container.
+Python 3.7 is installed in the radiasoft/python3 container.
