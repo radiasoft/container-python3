@@ -4,5 +4,5 @@ build_is_public=1
 
 build_as_run_user() {
     umask 022
-    bivio_pyenv_3
+    radia_run pyenv
 }
